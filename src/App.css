@@ -1,0 +1,125 @@
+.app {
+  background-size: cover;
+  background-position: center;
+  animation: bgFade .5s ease-in-out;
+}
+
+@keyframes bgFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.glass-card {
+  background: rgba(0, 0, 0, 0.299);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 4px 2px rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent);
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.8),
+      transparent,
+      rgba(255, 255, 255, 0.3));
+}
+
+.location-input {
+  background-color: rgba(0, 0, 0, 0.277);
+  border: none;
+  color: white;
+  font-size: large;
+}
+
+.location-input:focus {
+  background-color: rgba(0, 0, 0, 0.277);
+  border: none;
+  color: white;
+}
+
+.location-input::placeholder {
+  color: rgba(255, 255, 255, 0.624);
+  opacity: 1;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.25);
+    opacity: 0.6;
+  }
+}
+
+
+.robo-msg {
+  min-width: 50%;
+}
+
+/* md and below (<= 768px) */
+@media (max-width: 768px) {
+  .robo-msg {
+    min-width: 80%;
+  }
+}
+
