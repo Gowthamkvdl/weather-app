@@ -1,11 +1,3 @@
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      "spline-viewer": any;
-    }
-  }
-}
-declare module "@splinetool/viewer";
 
 
 import { StrictMode } from 'react'
