@@ -1,3 +1,11 @@
+// ensure TypeScript recognizes <spline-viewer> globally (fallback)
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "spline-viewer": any;
+    }
+  }
+}
 
 
 import { StrictMode } from 'react'
