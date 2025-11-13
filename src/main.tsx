@@ -5,6 +5,7 @@ declare global {
     }
   }
 }
+declare module "@splinetool/viewer";
 
 
 import { StrictMode } from 'react'

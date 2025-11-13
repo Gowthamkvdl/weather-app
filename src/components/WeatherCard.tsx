@@ -5,7 +5,7 @@ declare global {
     }
   }
 } 
- 
+declare module "@splinetool/viewer";
 
 import React, { useEffect, useMemo, useState } from "react"
 import { FiEdit } from "react-icons/fi"
