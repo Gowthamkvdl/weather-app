@@ -146,7 +146,7 @@ const WeatherCard: React.FC<WeatherProps> = ({
     <div className="container py-4 text-white">
       <div className="row justify-content-center align-items-center gx-4">
         {/* Left column: Spline Robo */}
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6"> 
           <div
             className="position-relative w-100 overflow-hidden"
             style={{ height: 500, borderRadius: 20 }}
